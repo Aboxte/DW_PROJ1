@@ -1,0 +1,34 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[F_wizyty]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[F_wizyty].[zrodlo_wizyta_id] on table [dbo].[F_wizyty] must be added, but the column has no default
+         value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue
+         you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of
+         smart-defaults as a deployment option.
+
+** User actions
+     Table rebuild
+       [dbo].[F_wizyty] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_F_wizyty_W_lokalizacje] (Foreign Key)
+       [dbo].[FK_F_wizyty_W_pracownicy] (Foreign Key)
+       [dbo].[FK_F_wizyty_W_ankiety] (Foreign Key)
+       [dbo].[FK_F_wizyty_W_daty] (Foreign Key)
+       [dbo].[FK_F_wizyty_W_produkty] (Foreign Key)
+     Create
+       [dbo].[FK_F_wizyty_W_lokalizacje] (Foreign Key)
+       [dbo].[FK_F_wizyty_W_pracownicy] (Foreign Key)
+       [dbo].[FK_F_wizyty_W_ankiety] (Foreign Key)
+       [dbo].[FK_F_wizyty_W_daty] (Foreign Key)
+       [dbo].[FK_F_wizyty_W_produkty] (Foreign Key)
+
+The column [dbo].[F_wizyty].[zrodlo_wizyta_id] on table [dbo].[F_wizyty] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The project and target databases have different collation settings. Deployment errors might occur.
+

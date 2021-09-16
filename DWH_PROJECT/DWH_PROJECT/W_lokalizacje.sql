@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[W_lokalizacje]
+(
+	[id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [zrodlo_id] INT NOT NULL, 
+    [wojewodztwo] NVARCHAR(500) NULL, 
+    [powiat] NVARCHAR(500) NULL, 
+    [gmina] NVARCHAR(500) NULL, 
+    [miasto] NVARCHAR(500) NULL, 
+    [kod_pocztowy] NVARCHAR(255) NULL, 
+    [ulica] NVARCHAR(500) NULL, 
+    [numer_budynku] NVARCHAR(255) NULL, 
+    [szerokosc_geograficzna] FLOAT NULL, 
+    [dlugosc_geograficzna] FLOAT NULL, 
+    [siec] NVARCHAR(1000) NULL, 
+    [nazwa_skrocona] NVARCHAR(1000) NULL, 
+    [nazwa_pelna] NVARCHAR(1000) NULL, 
+    [nip] BIGINT NULL, 
+    [opiekun_imie_nazwisko] NVARCHAR(500) NULL, 
+    [opiekun_email] NVARCHAR(500) NULL, 
+    [opiekun_nr_telefonu] INT NULL, 
+    [zrodlo_data_wprowadzenia] DATETIME NULL, 
+    [zrodlo_data_modyfikacji] DATETIME NULL, 
+    [obowiazuje_od] DATETIME NOT NULL, 
+    [obowiazuje_do] DATETIME NULL
+)

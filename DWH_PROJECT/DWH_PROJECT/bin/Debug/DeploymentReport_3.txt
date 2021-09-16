@@ -1,0 +1,38 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[F_wizyty]
+       [dbo].[W_ankiety]
+       [dbo].[W_daty]
+       [dbo].[W_lokalizacje]
+       [dbo].[W_pracownicy]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Table rebuild
+       [dbo].[F_wizyty] (Table)
+       [dbo].[W_ankiety] (Table)
+       [dbo].[W_daty] (Table)
+       [dbo].[W_lokalizacje] (Table)
+       [dbo].[W_pracownicy] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_F_wizyty_W_lokalizacje] (Foreign Key)
+       [dbo].[FK_F_wizyty_W_pracownicy] (Foreign Key)
+       [dbo].[FK_F_wizyty_W_ankiety] (Foreign Key)
+       [dbo].[FK_F_wizyty_W_daty] (Foreign Key)
+       [dbo].[FK_F_wizyty_W_produkty] (Foreign Key)
+     Create
+       [dbo].[FK_F_wizyty_W_lokalizacje] (Foreign Key)
+       [dbo].[FK_F_wizyty_W_pracownicy] (Foreign Key)
+       [dbo].[FK_F_wizyty_W_ankiety] (Foreign Key)
+       [dbo].[FK_F_wizyty_W_daty] (Foreign Key)
+       [dbo].[FK_F_wizyty_W_produkty] (Foreign Key)
+
+The project and target databases have different collation settings. Deployment errors might occur.
+

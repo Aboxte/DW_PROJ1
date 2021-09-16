@@ -1,0 +1,811 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/15/2021 1:25:25 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="ERNEST-PC"
+  DTS:CreatorName="ERNEST-PC\Ja"
+  DTS:DTSID="{E7BD7FD3-9F75-481A-A034-EF9B1930865B}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.1301.433"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Import_W_daty"
+  DTS:PackageType="5"
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{46DCAA88-5759-4911-8C67-9E326C213B34}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[W_daty_csv]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{89F3D870-7AF6-4148-9C7F-7E318F4AE32B}"
+      DTS:ObjectName="W_daty_csv">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1045"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\WSEI\PPSBI\DANE ŹRÓDŁOWE DO BAZY PROD\W_daty.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id"
+              DTS:DTSID="{E14F6FAA-FF1C-431A-9727-5AC003AFEB4B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="kwartal"
+              DTS:DTSID="{1617A534-C491-4864-A957-B65EC5381F7E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="miesiac"
+              DTS:DTSID="{F78B75ED-DF82-44A5-AB4D-2AF267991CA2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="tydzien"
+              DTS:DTSID="{4DADC86B-8914-4B83-94CA-8F55733FD0D8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="dzien"
+              DTS:DTSID="{336A1AC5-5796-4115-80B9-49788776220F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="dzien_tygodnia"
+              DTS:DTSID="{002FD2B3-83F7-42C6-BF57-FBA5A653AAFD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="kwartal_etykieta"
+              DTS:DTSID="{268A73A4-D5B7-4A78-8AE1-DA9A99FDA47F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="90"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="miesiac_etykieta"
+              DTS:DTSID="{3E56F59F-85E3-43BA-8A84-2059D9CBED5F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="110"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="tydzien_etykieta"
+              DTS:DTSID="{C928A631-2C34-4255-B853-74F72756C99A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="dzien_etykieta"
+              DTS:DTSID="{F4A8855E-0F48-449A-8269-478B9F42E600}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="130"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="dzien_tygodnia_etykieta"
+              DTS:DTSID="{343AFAB2-3DEA-4600-8CE4-FD4830940D31}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Import_W_daty"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{4F8DC91C-0DD3-4AD0-8393-AACD9DD87EE3}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Import_W_daty"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Import_W_daty\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import_W_daty\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[W_daty_csv]"
+                  connectionManagerRefId="Package.ConnectionManagers[W_daty_csv]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[id]"
+                      name="id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[kwartal]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[kwartal]"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[kwartal]"
+                      name="kwartal"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[miesiac]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[miesiac]"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[miesiac]"
+                      name="miesiac"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[tydzien]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[tydzien]"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[tydzien]"
+                      name="tydzien"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[dzien]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[dzien]"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[dzien]"
+                      name="dzien"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[dzien_tygodnia]"
+                      dataType="i1"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[dzien_tygodnia]"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[dzien_tygodnia]"
+                      name="dzien_tygodnia"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[kwartal_etykieta]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[kwartal_etykieta]"
+                      length="50"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[kwartal_etykieta]"
+                      name="kwartal_etykieta"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[miesiac_etykieta]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[miesiac_etykieta]"
+                      length="50"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[miesiac_etykieta]"
+                      name="miesiac_etykieta"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[tydzien_etykieta]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[tydzien_etykieta]"
+                      length="50"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[tydzien_etykieta]"
+                      name="tydzien_etykieta"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[dzien_etykieta]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[dzien_etykieta]"
+                      length="50"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[dzien_etykieta]"
+                      name="dzien_etykieta"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[dzien_tygodnia_etykieta]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[dzien_tygodnia_etykieta]"
+                      length="50"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[dzien_tygodnia_etykieta]"
+                      name="dzien_tygodnia_etykieta"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id]"
+                      dataType="i8"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[kwartal]"
+                      dataType="i1"
+                      name="kwartal" />
+                    <externalMetadataColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[miesiac]"
+                      dataType="i1"
+                      name="miesiac" />
+                    <externalMetadataColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[tydzien]"
+                      dataType="i1"
+                      name="tydzien" />
+                    <externalMetadataColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[dzien]"
+                      dataType="i1"
+                      name="dzien" />
+                    <externalMetadataColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[dzien_tygodnia]"
+                      dataType="i1"
+                      name="dzien_tygodnia" />
+                    <externalMetadataColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[kwartal_etykieta]"
+                      codePage="65001"
+                      dataType="str"
+                      length="100"
+                      name="kwartal_etykieta" />
+                    <externalMetadataColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[miesiac_etykieta]"
+                      codePage="65001"
+                      dataType="str"
+                      length="90"
+                      name="miesiac_etykieta" />
+                    <externalMetadataColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[tydzien_etykieta]"
+                      codePage="65001"
+                      dataType="str"
+                      length="110"
+                      name="tydzien_etykieta" />
+                    <externalMetadataColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[dzien_etykieta]"
+                      codePage="65001"
+                      dataType="str"
+                      length="500"
+                      name="dzien_etykieta" />
+                    <externalMetadataColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[dzien_tygodnia_etykieta]"
+                      codePage="65001"
+                      dataType="str"
+                      length="130"
+                      name="dzien_tygodnia_etykieta" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import_W_daty\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[W_daty]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import_W_daty\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{4CB75219-DFCA-4CAF-960B-509E89BFC0AB}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DWH_DATABASE]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[id]"
+                      cachedDataType="i8"
+                      cachedName="id"
+                      externalMetadataColumnId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[id]" />
+                    <inputColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[kwartal]"
+                      cachedDataType="i1"
+                      cachedName="kwartal"
+                      externalMetadataColumnId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[kwartal]"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[kwartal]" />
+                    <inputColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[miesiac]"
+                      cachedDataType="i1"
+                      cachedName="miesiac"
+                      externalMetadataColumnId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[miesiac]"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[miesiac]" />
+                    <inputColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[tydzien]"
+                      cachedDataType="i1"
+                      cachedName="tydzien"
+                      externalMetadataColumnId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[tydzien]"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[tydzien]" />
+                    <inputColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[dzien]"
+                      cachedDataType="i1"
+                      cachedName="dzien"
+                      externalMetadataColumnId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[dzien]"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[dzien]" />
+                    <inputColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[dzien_tygodnia]"
+                      cachedDataType="i1"
+                      cachedName="dzien_tygodnia"
+                      externalMetadataColumnId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[dzien_tygodnia]"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[dzien_tygodnia]" />
+                    <inputColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[kwartal_etykieta]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="kwartal_etykieta"
+                      externalMetadataColumnId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[kwartal_etykieta]"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[kwartal_etykieta]" />
+                    <inputColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[miesiac_etykieta]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="miesiac_etykieta"
+                      externalMetadataColumnId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[miesiac_etykieta]"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[miesiac_etykieta]" />
+                    <inputColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[tydzien_etykieta]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="tydzien_etykieta"
+                      externalMetadataColumnId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[tydzien_etykieta]"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[tydzien_etykieta]" />
+                    <inputColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[dzien_etykieta]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="dzien_etykieta"
+                      externalMetadataColumnId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[dzien_etykieta]"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[dzien_etykieta]" />
+                    <inputColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[dzien_tygodnia_etykieta]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="dzien_tygodnia_etykieta"
+                      externalMetadataColumnId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[dzien_tygodnia_etykieta]"
+                      lineageId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output].Columns[dzien_tygodnia_etykieta]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[kwartal]"
+                      dataType="i4"
+                      name="kwartal" />
+                    <externalMetadataColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[miesiac]"
+                      dataType="i4"
+                      name="miesiac" />
+                    <externalMetadataColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[tydzien]"
+                      dataType="i4"
+                      name="tydzien" />
+                    <externalMetadataColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[dzien]"
+                      dataType="i4"
+                      name="dzien" />
+                    <externalMetadataColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[dzien_tygodnia]"
+                      dataType="i4"
+                      name="dzien_tygodnia" />
+                    <externalMetadataColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[kwartal_etykieta]"
+                      dataType="wstr"
+                      length="100"
+                      name="kwartal_etykieta" />
+                    <externalMetadataColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[miesiac_etykieta]"
+                      dataType="wstr"
+                      length="100"
+                      name="miesiac_etykieta" />
+                    <externalMetadataColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[tydzien_etykieta]"
+                      dataType="wstr"
+                      length="100"
+                      name="tydzien_etykieta" />
+                    <externalMetadataColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[dzien_etykieta]"
+                      dataType="wstr"
+                      length="100"
+                      name="dzien_etykieta" />
+                    <externalMetadataColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[dzien_tygodnia_etykieta]"
+                      dataType="wstr"
+                      length="100"
+                      name="dzien_tygodnia_etykieta" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import_W_daty\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import_W_daty\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import_W_daty\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import_W_daty\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Import_W_daty.Paths[Flat File Source Output]"
+              endId="Package\Import_W_daty\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Import_W_daty\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="152,41.6"
+          Id="Package\Import_W_daty"
+          TopLeft="210.642860636419,104.605883742864" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Import_W_daty">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Import_W_daty\Flat File Source"
+          TopLeft="384.571435120641,176.188237765091" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Import_W_daty\OLE DB Destination"
+          TopLeft="401.714292555439,412.941182261932" />
+        <EdgeLayout
+          Id="Package\Import_W_daty.Paths[Flat File Source Output]"
+          TopLeft="459.771435120641,217.788237765091">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="27.1428574347981,195.152944496841"
+              Start="0,0"
+              End="27.1428574347981,187.652944496841">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,93.5764722484206" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,93.5764722484206"
+                    Point2="0,97.5764722484206"
+                    Point3="4,97.5764722484206" />
+                  <mssgle:LineSegment
+                    End="23.1428574347981,97.5764722484206" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.1428574347981,97.5764722484206"
+                    Point2="27.1428574347981,97.5764722484206"
+                    Point3="27.1428574347981,101.576472248421" />
+                  <mssgle:LineSegment
+                    End="27.1428574347981,187.652944496841" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import_W_daty\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

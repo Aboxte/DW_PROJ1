@@ -1,0 +1,10 @@
+C:\Users\Ja\source\repos\DWH_PROJECT\DWH_PROJECT\bin\Debug\DWH_PROJECT.dacpac
+C:\Users\Ja\source\repos\DWH_PROJECT\DWH_PROJECT\bin\Debug\DWH_PROJECT.dll
+C:\Users\Ja\source\repos\DWH_PROJECT\DWH_PROJECT\bin\Debug\DWH_PROJECT.pdb
+C:\Users\Ja\source\repos\DWH_PROJECT\DWH_PROJECT\obj\Debug\DWH_PROJECT.sqlprojAssemblyReference.cache
+C:\Users\Ja\source\repos\DWH_PROJECT\DWH_PROJECT\obj\Debug\Model.xml
+C:\Users\Ja\source\repos\DWH_PROJECT\DWH_PROJECT\obj\Debug\refactor.xml
+C:\Users\Ja\source\repos\DWH_PROJECT\DWH_PROJECT\obj\Debug\postdeploy.sql
+C:\Users\Ja\source\repos\DWH_PROJECT\DWH_PROJECT\obj\Debug\predeploy.sql
+C:\Users\Ja\source\repos\DWH_PROJECT\DWH_PROJECT\obj\Debug\DWH_PROJECT.dll
+C:\Users\Ja\source\repos\DWH_PROJECT\DWH_PROJECT\obj\Debug\DWH_PROJECT.pdb

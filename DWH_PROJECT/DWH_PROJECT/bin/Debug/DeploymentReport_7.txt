@@ -1,0 +1,22 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[W_daty]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Table rebuild
+       [dbo].[W_daty] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_F_wizyty_W_daty] (Foreign Key)
+     Create
+       [dbo].[FK_F_wizyty_W_daty] (Foreign Key)
+
+The project and target databases have different collation settings. Deployment errors might occur.
+
