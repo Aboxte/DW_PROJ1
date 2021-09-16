@@ -1,0 +1,283 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f54eed09-2e7d-4524-9524-7f05bf2b780c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>F Wizyty</ID>
+  <Name>F Wizyty</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2890" scrolltop="-12211" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10541" y="29422" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee00009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="F_wizyty" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4720" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00007012000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_F_wizyty" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2890</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-12211</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="80cd0eb7-1703-4a67-8fcd-2a3b2a7ae3d8">
+    <DataSourceViewID>DWH WSEI ERNEST PIEKARCZYK</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="051ed2c7-5972-450a-97c8-0522ba258e9e">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="1987971b-2017-4ba1-9cfc-618db17d1a5c">
+      <ID>Id</ID>
+      <Name>Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="89fc222d-3b87-482d-aa55-34acb6564409">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="75824ba7-7181-4207-9019-27b8edb5d70b">
+            <TableID>dbo_F_wizyty</TableID>
+            <ColumnID>id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="db3ca1b7-db5c-473a-82f8-ddd798f06c88">
+          <AttributeID>Pytanie Id</AttributeID>
+          <Name>Pytanie Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a696649b-5328-418e-a8e1-118a7efb7940">
+          <AttributeID>Pracownik Id</AttributeID>
+          <Name>Pracownik Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="adba6a4f-901c-49eb-8483-71962fcae0a3">
+          <AttributeID>Lokalizacja Id</AttributeID>
+          <Name>Lokalizacja Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3fa06277-ad59-4d50-bee6-d0ff13e5fa73">
+          <AttributeID>Produkt Id</AttributeID>
+          <Name>Produkt Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="85d06045-d92d-48ef-a0f3-613a7f90b0c0">
+          <AttributeID>Data Wizyty Id</AttributeID>
+          <Name>Data Wizyty Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e1145c19-1149-41ba-b726-08b7f980b1fa">
+          <AttributeID>Data Wizyty Id 1</AttributeID>
+          <Name>Data Wizyty Id 1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0e305b15-0884-4f5b-909a-003fb7b49b79">
+          <AttributeID>Czas Rozpoczecia Wizyty</AttributeID>
+          <Name>Czas Rozpoczecia Wizyty</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="20ffb56d-8b97-4e09-83ac-3152b51cdbc2">
+          <AttributeID>Czas Zakonczenia Wizyty</AttributeID>
+          <Name>Czas Zakonczenia Wizyty</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8a562f7c-f776-45f3-a18f-29073aaf8a50">
+          <AttributeID>Zrodlo Wizyta Id</AttributeID>
+          <Name>Zrodlo Wizyta Id</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="25fac9ae-4a86-4ce4-a3d5-117390290cfa">
+      <ID>Pytanie Id</ID>
+      <Name>Pytanie Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="beecf8bc-c78f-4290-afd8-8e695f36723b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b4e5c897-0bb1-4379-ae15-09bceb2dceea">
+            <TableID>dbo_F_wizyty</TableID>
+            <ColumnID>pytanie_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="db6db713-468e-4733-9de5-16e675d45b0a">
+      <ID>Pracownik Id</ID>
+      <Name>Pracownik Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5b7da15c-4536-4d41-9a4a-f61dabbe997f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="49e50e65-582d-4f61-b008-4dbec8480336">
+            <TableID>dbo_F_wizyty</TableID>
+            <ColumnID>pracownik_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2d90b74a-3b53-40cd-ba66-d51749abeeeb">
+      <ID>Lokalizacja Id</ID>
+      <Name>Lokalizacja Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ae59d5e9-2b5a-49fb-a347-48fa05b481cb">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c2e9769f-ac53-4f94-bbc4-a1e3ae978d70">
+            <TableID>dbo_F_wizyty</TableID>
+            <ColumnID>lokalizacja_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7f14ad57-d0e3-4c6c-a00d-e307ed59c4b0">
+      <ID>Produkt Id</ID>
+      <Name>Produkt Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="54085fe3-a51b-4512-ad31-b96a989f7255">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="749589bb-ffc0-4f29-be47-249ba98f4251">
+            <TableID>dbo_F_wizyty</TableID>
+            <ColumnID>produkt_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dfec48fc-dc08-44ae-80d4-a9492aef7cdf">
+      <ID>Data Wizyty Id</ID>
+      <Name>Data Wizyty Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5d676e21-44af-43aa-96f7-327b684b3b88">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="144ec20d-a4ee-4f96-a863-5b80283ebaa2">
+            <TableID>dbo_F_wizyty</TableID>
+            <ColumnID>data_wizyty_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="99ff4110-6b72-4e72-bbd9-92c76a42814b">
+      <ID>Data Wizyty Id 1</ID>
+      <Name>Data Wizyty Id 1</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b8a71187-0f47-43ff-8a52-9be22f65d16e">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d96ecf04-e850-49d7-ac10-6c9c892d3efd">
+            <TableID>dbo_F_wizyty</TableID>
+            <ColumnID>data_wizyty_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4dce5c05-67d5-4c2e-a5ae-fc34038c489c">
+      <ID>Czas Rozpoczecia Wizyty</ID>
+      <Name>Czas Rozpoczecia Wizyty</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="23e7c5f7-8fc0-4b1a-955c-0c1fd0fb3ebc">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="224145e6-6d83-4e53-b13f-c7ba625441c5">
+            <TableID>dbo_F_wizyty</TableID>
+            <ColumnID>czas_rozpoczecia_wizyty</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="db62a106-ae26-4475-bc20-25c63b2a6c77">
+      <ID>Czas Zakonczenia Wizyty</ID>
+      <Name>Czas Zakonczenia Wizyty</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ef3ab271-9086-4074-b0cf-119167eef167">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="35e033ab-a50e-4753-a40b-a6b851b854cd">
+            <TableID>dbo_F_wizyty</TableID>
+            <ColumnID>czas_zakonczenia_wizyty</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="28f28af5-b552-4ea8-b50a-2346a2ca739a">
+      <ID>Zrodlo Wizyta Id</ID>
+      <Name>Zrodlo Wizyta Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="070a4f00-6693-4020-a8dc-57b8996a6cad">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2bc16a75-3a69-4547-8769-2b8a2ef0e32f">
+            <TableID>dbo_F_wizyty</TableID>
+            <ColumnID>zrodlo_wizyta_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

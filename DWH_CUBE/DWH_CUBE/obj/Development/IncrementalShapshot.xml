@@ -1,0 +1,96 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>DWH_CUBE</Database>
+    <Server>ERNEST-PC\ERNEST_MAIN</Server>
+    <ConnectionString>Data Source=ERNEST-PC\ERNEST_MAIN;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>cN5Df05wW8L/mY5sLku3l4ehtrg=15.09.2021 21:15:0815.09.2021 19:20:33</TimeStamp>
+        <ID>
+          <String>DWH WSEI ERNEST PIEKARCZYK</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>2CO59lXlQxZboGnnpWi2sz2FCcc=15.09.2021 23:25:5215.09.2021 19:21:39</TimeStamp>
+        <ID>
+          <String>DWH WSEI ERNEST PIEKARCZYK</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>qAgBFC/zQfKA2a9sruA6DmxDhZg=16.09.2021 01:20:1515.09.2021 21:27:20</TimeStamp>
+        <ID>
+          <String>W Daty</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>21um0qS+fmFx+q6KUM9PAv25/sg=16.09.2021 11:59:2115.09.2021 21:27:20</TimeStamp>
+        <ID>
+          <String>W Produkty</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>cM1QN9nLHobq1AN55P2INSZlGng=15.09.2021 22:51:1015.09.2021 21:27:20</TimeStamp>
+        <ID>
+          <String>W Lokalizacje</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>y1YwRLblEKxnyjRSgpNxsCm43zg=15.09.2021 22:51:1015.09.2021 21:27:20</TimeStamp>
+        <ID>
+          <String>W Pracownicy</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>LebBlXLiY3MgepsNEa5mZYwdsE0=15.09.2021 22:51:1015.09.2021 21:27:20</TimeStamp>
+        <ID>
+          <String>W Ankiety</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>H9gEYm5XasJAf9sbt35hx4flgCI=16.09.2021 00:53:2116.09.2021 00:47:15</TimeStamp>
+        <ID>
+          <String>F Wizyty</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>xN4PKH8TOycdcNFwJtg0rS69xgk=16.09.2021 11:41:2615.09.2021 23:15:37boR/Vc9XdS/y7bajNvoJplO/JPc=15.09.2021 23:15:3815.09.2021 23:15:38</TimeStamp>
+        <ID>
+          <String>DWH WSEI ERNEST PIEKARCZYK</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>fGW2znYNmplTp6vtAIB54eBXXxA=15.09.2021 19:17:5615.09.2021 19:17:56</TimeStamp>
+      <ID>
+        <String>DWH_CUBE</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2021-09-16T09:59:24.373333Z</LastDeployed>
+</DeploymentSnapshot>
